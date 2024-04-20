@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>S&Z Bros</title>
+  <meta name="title" content="S&Z Bros" />
+  <meta name="description" content="S&Z Bros is a popular movie app made by Shoaib Bin M.Ali" />
+  <link rel="shortcut icon" href="./assets/images/play_circle.png" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./assets/css/style.css" />
+</head>
+
+<body>
+  <header class="header">
+    <a href="index.html" class="logo" style="display: flex; gap: 5px; align-items: center;">
+      <img src="./assets/images/logosz.png" width="30" height="50" alt="S&Z Bros Home"
+        style="filter: drop-shadow(0px 0px 5px #C0C0C2);" />
+      <h2 style="font-weight: 900; font-size: 25pt; color: #C0C0C2; text-shadow: 0px 0px 10px #C0C0C2;">S&Z Bros</h2>
+    </a>
+    <div class="searchBox" id="searchBox" searchBox>
+      <div class="searchWrapper" id="searchWrapper">
+        <input type="text" name="search" class="searchField" id="searchField" placeholder="Search any movie..."
+          autocapitalize="off" aria-label="search movies" searchField />
+        <img src="./assets/images/search.png" width="24" height="24" alt="search" class="leadingIcon" />
+      </div>
+      <button class="searchBtn" id="searchClose">
+        <img src="./assets/images/close.png" width="24" height="24" alt="close search box" class="closeSearch" />
+      </button>
+    </div>
+    <button class="searchBtn" id="searchToggler" searchToggler menuClose>
+      <img src="./assets/images/search.png" width="24" height="24" alt="open search box" class="showSearch" />
+    </button>
+    <button class="menuBtn" id="menuBtn" menuBtn menuToggler>
+      <img src="./assets/images/menu.png" width="24" height="24" alt="open menu" class="menu" />
+      <img src="./assets/images/menu-close.png" width="24" height="24" alt="close menu" class="close" />
+    </button>
+  </header>
+
+  <main>
+    <!-- 
+        - #SIDEBAR
+      -->
+
+    <nav class="sidebar" id="sidebar" sidebar></nav>
+    <div class="overlay" overlay menuToggler></div>
+
+    <article class="container" pageContent>
+      <!-- 
+            - #BANNER
+         -->
+
+      <!-- <section class="banner" aria-label="popular movies">
+        <div class="bannerSlider">
+          <div class="sliderItem" sliderItem>
+            <img
+              src="./assets/images/slider-banner.jpg"
+              alt="Puss in Boots: The Last Wish"
+              class="imgCover"
+              loading="eager"
+            />
+            <div class="bannerContent">
+              <h2 class="heading">Puss in Boots: The Last Wish</h2>
+              <div class="metaList">
+                <div class="metaItem">2022</div>
+                <div class="metaItem cardBadge">7.5</div>
+              </div>
+              <p class="genre">Animation, Action, Adventure</p>
+              <p class="bannerText">
+                Puss in Boots discovers that his passion for adventure has taken
+                its toll: He has burned through eight of his nine lives, leaving
+                him with only one life left. Puss sets out on an epic journey to
+                find the mythical Last Wish and restore his nine lives.
+              </p>
+              <a href="./detail.html" class="btn">
+                <img
+                  src="./assets/images/play_circle.png"
+                  width="24"
+                  height="24"
+                  aria-hidden="true"
+                  alt="play circle"
+                />
+                <span class="span">Watch Now</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="sliderControl" sliderControl>
+            <div class="controlInner">
+                <button class="posterBox sliderItem">
+                    <img src="./assets/images/slider-control.jpg" loading="lazy" class="imgCover" draggable="false" alt="Slide to Puss in Boots: The Last Wish">
+                </button>
+            </div>
+        </div>
+      </section> -->
+
+      <!-- 
+        - Movies List
+       -->
+
+      <!-- <section class="moviesList" aria-label="Upcoming Movies">
+        <div class="titleWrapper">
+          <h3 class="titleLarge">Upcoming Movies</h3>
+        </div>
+        <div class="sliderList">
+          <div class="sliderInner">
+            <div class="movieCard">
+              <figure class="posterBox cardBanner">
+                <img
+                  src="./assets/images/slider-control.jpg"
+                  alt="Puss in Boots: The Last Wish"
+                  class="imgCover"
+                />
+              </figure>
+              <h4 class="title">Puss in Boots: The Last Wish</h4>
+              <div class="metaList">
+                <div class="metaItem">
+                  <img
+                    src="./assets/images/star.png"
+                    width="20"
+                    height="20"
+                    loading="lazy"
+                    alt="rating"
+                  />
+                  <span class="span">8.4</span>
+                </div>
+                <div class="cardBadge">2022</div>
+              </div>
+
+              <a
+                href="./detail.html"
+                class="cardBtn"
+                title="Puss in Boots: The Last Wish"
+              ></a>
+            </div>
+          </div>
+        </div>
+      </section> -->
+    </article>
+  </main>
+
+  <!-- <div class="searchModel active">
+    <p class="label">Results for</p>
+    <h1 class="heading">Puss In Boots</h1>
+    <div class="movieList">
+      <div class="gridList" id="gridListContent">
+        <div class="movieCard">
+          <figure class="posterBox cardBanner">
+            <img src="./assets/images/slider-control.jpg" alt="Puss in Boots: The Last Wish" class="imgCover" />
+          </figure>
+          <h4 class="title">Puss in Boots: The Last Wish</h4>
+          <div class="metaList">
+            <div class="metaItem">
+              <img src="./assets/images/star.png" width="20" height="20" loading="lazy" alt="rating" />
+              <span class="span">8.4</span>
+            </div>
+            <div class="cardBadge">2022</div>
+          </div>
+
+          <a href="./detail.html" class="cardBtn" title="Puss in Boots: The Last Wish"></a>
+        </div>
+      </div>
+    </div>
+  </div> -->
+  <script src="./assets/js/global.js" defer></script>
+  <script src="./assets/js/index.js" type="module"></script>
+  <script src="./assets/js/movie-card.js" type="module"></script>
+</body>
+</html>

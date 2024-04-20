@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>S&Z Bros</title>
+  <meta name="title" content="S&Z Bros" />
+  <meta name="description" content="S&Z Bros is a popular movie app made by Shoaib Bin M.Ali" />
+  <!-- favicon -->
+  <link rel="shortcut icon" href="./assets/images/play_circle.png" type="image/svg+xml" />
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap" rel="stylesheet" />
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="./assets/css/style.css" />
+</head>
+
+<body>
+  <!-- 
+        - #HEADERS
+     -->
+  <header class="header">
+    <a href="index.html" class="logo" style="display: flex; gap: 5px; align-items: center;">
+      <img src="./assets/images/logosz.png" width="30" height="50" alt="S&Z Bros Home"
+        style="filter: drop-shadow(0px 0px 5px #C0C0C2);" />
+      <h2 style="font-weight: 900; font-size: 25pt; color: #C0C0C2; text-shadow: 0px 0px 10px #C0C0C2;">S&Z Bros</h2>
+    </a>
+    <div class="searchBox" id="searchBox" searchBox>
+      <div class="searchWrapper" id="searchWrapper" searchWrapper>
+        <input type="text" name="search" class="searchField" id="searchField" placeholder="Search any movie..." autocapitalize="off"
+          aria-label="search movies" searchField />
+        <img src="./assets/images/search.png" width="24" height="24" alt="search" class="leadingIcon" />
+      </div>
+      <button class="searchBtn" id="searchClose">
+        <img src="./assets/images/close.png" width="24" height="24" alt="close search box" class="closeSearch" />
+      </button>
+    </div>
+    <div class="searchBtn" id="searchToggler" searchToggler menuClose>
+      <img src="./assets/images/search.png" width="24" height="24" alt="open search box" class="showSearch" />
+    </div>
+    <button class="menuBtn" menuBtn menuToggler>
+      <img src="./assets/images/menu.png" width="24" height="24" alt="open menu" class="menu" />
+      <img src="./assets/images/menu-close.png" width="24" height="24" alt="close menu" class="close" />
+    </button>
+  </header>
+
+  <main>
+
+    <!-- 
+        - #SIDEBAR
+      -->
+
+    <nav class="sidebar" id="sidebar" sidebar></nav>
+    <div class="overlay" overlay menuToggler></div>
+
+    <article class="container" pageContent>
+      <!-- 
+        - Movies List
+       -->
+
+      <!-- <section class="moviesList genreList">
+        <div class="titleWrapper">
+          <h1 class="heading">All Fantasy Movies</h1>
+        </div>
+        <div class="gridList">
+          <div class="movieCard">
+            <figure class="posterBox cardBanner">
+              <img
+                src="./assets/images/slider-control.jpg"
+                alt="Puss in Boots: The Last Wish"
+                class="imgCover"
+              />
+            </figure>
+            <h4 class="title">Puss in Boots: The Last Wish</h4>
+            <div class="metaList">
+              <div class="metaItem">
+                <img
+                  src="./assets/images/star.png"
+                  width="20"
+                  height="20"
+                  loading="lazy"
+                  alt="rating"
+                />
+                <span class="span">8.4</span>
+              </div>
+              <div class="cardBadge">2022</div>
+            </div>
+
+            <a
+              href="./detail.html"
+              class="cardBtn"
+              title="Puss in Boots: The Last Wish"
+            ></a>
+          </div>
+        </div>
+
+        <button class="btn loadMore loading">Load More</button>
+      </section> -->
+    </article>
+  </main>
+
+  <!-- Custom Js -->
+  <script src="./assets/js/global.js" defer></script>
+  <script src="./assets/js/movie-list.js" type="module"></script>
+</body>
+
+</html>
